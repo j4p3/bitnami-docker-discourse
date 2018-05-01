@@ -113,7 +113,7 @@ If you want to run the application manually instead of using docker-compose, the
 4. Run the Discourse Sidekiq container:
 
   ```bash
-  $ docker run -d --name sidekiq --net=discourse-tier \
+  $ docker run -d -p 80:3000 --name sidekiq --net=discourse-tier \
       bitnami/discourse nami start --foreground discourse-sidekiq
   ```
 
