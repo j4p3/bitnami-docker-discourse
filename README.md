@@ -214,7 +214,7 @@ In this case you need to specify the directories to mount on the run command. Th
 5. Run the Discourse container:
 
   ```bash
-  $ docker run -d --name discourse -p 80:80 \
+  $ docker run -d --name discourse -p 80:3000 \
   --net=discourse-tier \
   --volume /path/to/discourse-persistence:/bitnami \
   bitnami/discourse
